@@ -13,20 +13,21 @@ code {
 }
 
 .App {
-  height: 100vh;
-  width: 100vw;
+  height: 95vh;
+  width: 99vw;
 }
 
 #dropdown-container {
-  min-height: 30%;
+  min-height: 20%;
   height: auto;
   width: 35%;
   position: relative;
-  left: 40%;
+  left: 35%;
   top: 10%;
   background-color: skyblue;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
+  padding-top: 0px;
 }
 
 #dropdown-btn {
@@ -38,12 +39,18 @@ code {
   justify-content: space-between;
   align-items: center;
   padding: 0;
+  margin-bottom: 5px;
+  border-radius: 5px;
 }
 
 #open-dropdown {
   height: 15px;
   width: 15px;
   margin-right: 15px;
+}
+
+#open-dropdown:hover {
+  cursor: pointer;
 }
 
 #btn-value {
@@ -61,14 +68,22 @@ img {
   height: auto;
   background: white;
   margin: auto;
-  /* padding-bottom: 10px; */
+  border-radius: 5px;
 }
 
 .list-item {
   height: 30px;
   width: 100%;
-  font-size: 20px;
-  text-align: start;
-  padding-left: 15px;
   border-top: 1px solid lightgray;
+  text-align: start;
+}
+
+.list-item > span {
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.list-item:hover {
+  cursor: pointer;
+  background: lightgrey;
 }
